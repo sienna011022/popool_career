@@ -1,4 +1,5 @@
 package kr.co.popool.service.score;
 
-public class ScorePolicyImpl {
+public class ScorePolicyImpl implements ScorePolicy {
+
 }
