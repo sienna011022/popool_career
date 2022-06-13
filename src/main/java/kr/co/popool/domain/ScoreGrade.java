@@ -1,4 +1,9 @@
 package kr.co.popool.domain;
 
-public class ScoreGrade {
+public enum ScoreGrade {
+    GOLD,
+    SILVER,
+    BRONZE,
+    BLACK
+
 }

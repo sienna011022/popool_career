@@ -2,22 +2,37 @@ package kr.co.popool.domain;
 
 public class Career {
 
+
     private Long id;
     private String name;
 
     private String period;
-    private Long score;
+    private final ScoreGrade score;
+    private final int attendance;
+
+    private final int sincerity;
+    private final int positiveness;
+
+    private final int techincal;
+    private final int cooperative;
+
+    private int average;
 
     private Long historyID;
 
 
 
-
-    public Career(Long id, String name, String period, Long score, Long historyID) {
+    public Career(Long id, String name, String period, ScoreGrade score, int attendance, int sincerity, int positiveness, int techincal, int cooperative, int average, Long historyID) {
         this.id = id;
         this.name = name;
         this.period = period;
         this.score = score;
+        this.attendance = attendance;
+        this.sincerity = sincerity;
+        this.positiveness = positiveness;
+        this.techincal = techincal;
+        this.cooperative = cooperative;
+        this.average = average;
         this.historyID = historyID;
     }
 
@@ -46,12 +61,13 @@ public class Career {
         this.period = period;
     }
 
-    public Long getScore() {
+    public ScoreGrade getScore() {
         return score;
     }
 
-    public void setScore(Long score) {
-        this.score = score;
+    public ScoreGrade setScore(ScoreGrade score) {
+        return score;
+
     }
 
     public Long getHistoryID() {
@@ -62,6 +78,34 @@ public class Career {
         this.historyID = historyID;
     }
 
+
+    public int getAttendance() {
+        return attendance;
+    }
+
+    public int getSincerity() {
+        return sincerity;
+    }
+
+    public int getPositiveness() {
+        return positiveness;
+    }
+
+    public int getTechincal() {
+        return techincal;
+    }
+
+    public int getCooperative() {
+        return cooperative;
+    }
+
+    public int getAverage() {
+        return average;
+    }
+
+    public void setAverage(int average) {
+        this.average = average;
+    }
 
 }
 
