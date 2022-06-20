@@ -1,11 +1,21 @@
 package kr.co.popool.service.score;
 
 import kr.co.popool.domain.Career;
-import kr.co.popool.domain.ScoreGrade;
+import kr.co.popool.domain.Score;
+import kr.co.popool.entity.ScoreGrade;
+import kr.co.popool.repository.career.ScoreRepository;
 
 public interface ScorePolicy {
 
-    ScoreGrade evaluate(Career career);
+    //평가 등록
+
+    void joinScore(Score score);
 
 
+
+    //평가 조회
+    Score findScore(Long careerId);
+
+    //score을 계산해서 Grade에 객체의 등급을 매겨줌
+    ScoreGrade evaluateGrade(Score score);
 }

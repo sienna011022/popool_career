@@ -1,4 +1,4 @@
-package kr.co.popool.domain;
+package kr.co.popool.entity;
 
 public enum ScoreGrade {
     GOLD,
