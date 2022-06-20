@@ -1,4 +1,4 @@
-package kr.co.popool.repository.career;
+package kr.co.popool.repository.blockchain;
 
 import kr.co.popool.domain.Career;
 

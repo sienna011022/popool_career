@@ -1,9 +1,7 @@
 package kr.co.popool.service.score;
 
-import kr.co.popool.domain.Career;
 import kr.co.popool.domain.Score;
 import kr.co.popool.entity.ScoreGrade;
-import kr.co.popool.repository.career.ScoreRepository;
 
 public interface ScorePolicy {
 

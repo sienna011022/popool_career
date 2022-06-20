@@ -1,4 +1,4 @@
-package kr.co;
+package kr.co.score;
 
 import kr.co.popool.AppConfig;
 import kr.co.popool.domain.Career;
@@ -40,6 +40,7 @@ class ScorePolicyTest {
 
         //then
         Score findScore = scorePolicy.findScore(1L);
+        System.out.println("아이디 = "+ score.getCareerId());
         Assertions.assertThat(score).isEqualTo(findScore);
     }
     //성공 테스트

@@ -1,4 +1,4 @@
-package kr.co;
+package kr.co.career;
 
 import kr.co.popool.AppConfig;
 import kr.co.popool.domain.Career;
@@ -24,12 +24,13 @@ public class CareerServiceTest {
     @DisplayName("인사 내역 등록")
     void join(){
         //given
-        Career career = new Career(1L,"career1","1year",null);
+        Career career = new Career(1L,"career1", null, "1year",null);
         //when
         careerService.join(career);
         Career findCareer = careerService.findCareer(1L);
 
         //then
+
         Assertions.assertThat(career).isEqualTo(findCareer);
 
     }

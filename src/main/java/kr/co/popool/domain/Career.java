@@ -7,6 +7,7 @@ public class Career {
 
     private Long id;
     private String name;
+    private ScoreGrade grade;
 
     private String period;
 
@@ -14,9 +15,10 @@ public class Career {
 
 
 
-    public Career(Long id, String name,String period, Long historyID) {
+    public Career(Long id, String name, ScoreGrade grade, String period, Long historyID) {
         this.id = id;
         this.name = name;
+        this.grade = grade;
         this.period = period;
         this.historyID = historyID;
     }
@@ -57,7 +59,12 @@ public class Career {
     }
 
 
+    public void setGrade(ScoreGrade grade) {
+        this.grade = grade;
+    }
 
-
+    public ScoreGrade getGrade() {
+        return grade;
+    }
 }
 
