@@ -4,4 +4,9 @@
 * 전체 프로젝트 popool repository
 * 노션에서 프로젝트를 볼 수 있습니다 https://www.notion.so/7945739cb3d44ee1947f7fd1029c4024
 # 서비스 흐름도
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d6c466c-3589-42f9-bed5-6c0747c1fe7f/Untitled.png)
+![image](https://user-images.githubusercontent.com/90383376/174559660-913df260-e45d-4cfe-8a2c-ea81a4efd7b5.png)
+1. **인사 등록** : 클라이언트는 popool서비스에 인사 등록을 요청한다
+2. **인사 조회** : 평가 클라이언트의 평가를 위해 인사 조회가 필요하다. 그래서 popool서비스는 인사 저장소에서 인사 내역을 조회한다.
+3. **평가 등록** : 평가 클라이언트가 popool서비스에 평가 등록을 요청한다.
+4. **평가 적용** : popool서비스는 평가 값의 등급을 결정하기 위하여 평가 정책에 위임한다.
+5. **등급 반환** : popool서비스는 평가 정책이 반환한 등급 값을 포함하여 클라이언트 값을 갱신한다.
