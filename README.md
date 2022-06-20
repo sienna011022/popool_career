@@ -3,7 +3,7 @@
 * 현재 인사관리모듈(career)을 개발 중
 * 전체 프로젝트 popool repository
 * 노션에서 프로젝트를 볼 수 있습니다 https://www.notion.so/7945739cb3d44ee1947f7fd1029c4024
-# 서비스 흐름도
+## [서비스 흐름도]
 ![image](https://user-images.githubusercontent.com/90383376/174559660-913df260-e45d-4cfe-8a2c-ea81a4efd7b5.png)
 1. **인사 등록** : 클라이언트는 popool서비스에 인사 등록을 요청한다
 2. **인사 조회** : 평가 클라이언트의 평가를 위해 인사 조회가 필요하다. 그래서 popool서비스는 인사 저장소에서 인사 내역을 조회한다.
